@@ -1,10 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to My Blog where i Share my adventures using FSharp Language
 
-You can use the [editor on GitHub](https://github.com/FSharpDeveloper/fsharpdeveloper.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I invite you to take a look to my Repos and if you can give a feedback. I'll be glad for so.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### to FSharp or not To FSharp
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
