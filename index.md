@@ -1,6 +1,8 @@
-## Welcome to My Blog where i Share my adventures using FSharp Language
+## my adventures through FSharp Language
 
-I invite you to take a look to my Repos and if you can give a feedback. I'll be glad for so.
+it's been i while that I'm developping C# applications, and really like the language's flexablity, and also tooling and documentations, and in the majority of my projects I still use it, but recently I decided to have an experience using F#, i know about the language about 5 years ago, it was a project in the microsoft research website, the first contact was a superficial one, with just a curiosity to know the language and its syntax, but this time the experience was different because the fact that a lots of functionality i need to implement in a dynamic apis engine requires more flexibility, and all i need was in the F# world, the first interesting thing and may be the origin of my passion about this language was to concept (Discriminated Unions & Matching Pattern) just those two functionalities was realy impressioning, just not possible in C#, and for some solutions that require a lot of abstractions and patterns etc... just the usage of these two concepts turn the solution into a few lines of code.
+
+just lets go for it;
 
 ### to FSharp or not To FSharp
 
