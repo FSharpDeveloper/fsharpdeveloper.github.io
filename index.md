@@ -9,15 +9,15 @@ just lets go for it;
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+Discriminated Unions declaration:
+    type StringOrInt = 
+      | String of text:String
+      | Integer of count:Integer
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
+The Option discriminated union case:
+    type Option<'T> = 
+      | Some of 'T
+      | None
 1. Numbered
 2. List
 
