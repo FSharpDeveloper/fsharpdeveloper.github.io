@@ -13,26 +13,50 @@ Discriminated Unions declaration:
     type StringOrInt = 
       | String of text:String
       | Integer of count:Integer
-
+      
 The Option discriminated union case:
     type Option<'T> = 
       | Some of 'T
       | None
 
-    let patternMatchingOfOption<'T> value:Option<'T> = 
-       let result = 
+    let printResult<'T> value:Option<'T> = 
           match value with 
-          | Some t -> t
-          | None -> None
+          | Some t -> printfn "%o" t
+          | None -> printfn "no data"
 
+and here is a very ispiring example from msdn.microsoft.com
 
+    type Expression =
+        | Number of int
+        | Add of Expression * Expression
+        | Multiply of Expression * Expression
+        | Variable of string
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    let rec Evaluate (env:Map<string,int>) exp =
+        match exp with
+        | Number n -> n
+        | Add (x, y) -> Evaluate env x + Evaluate env y
+        | Multiply (x, y) -> Evaluate env x * Evaluate env y
+        | Variable id    -> env.[id]
 
-### Jekyll Themes
+    let environment = Map.ofList [ "a", 1 ;
+                                   "b", 2 ;
+                                   "c", 3 ]
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FSharpDeveloper/fsharpdeveloper.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    // Create an expression tree that represents
+    // the expression: a + 2 * b.
+    let expressionTree1 = Add(Variable "a", Multiply(Number 2, Variable "b"))
+
+    // Evaluate the expression a + 2 * b, given the
+    // table of values for the variables.
+    let result = Evaluate environment expressionTree1
+
+### AspNetCore Mvc Application using F#.
+the repository FSharpWebApp-With-EfCore is an example of using FSharp in an AspNetcore web application, including the usage of EntityFrameworkCore and identity, its purpose is to be starting point to understand Oriented Object Programming paradigm usage on F#,
+andd then contains a lot of statements, instructions and declarations of objects interfaces abstractions etc..., and then from here we will migrate to a more functional way of developing web applications, such as the integration of Suave or Giraffe and others ....
+[introduction](https://fsharpdeveloper.github.com/introduction/)
+#### objects types definition:
+     
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
