@@ -54,7 +54,7 @@ and here is a very ispiring example from msdn.microsoft.com
 ### AspNetCore Mvc Application using F#.
 the repository FSharpWebApp-With-EfCore is an example of using FSharp in an AspNetcore web application, including the usage of EntityFrameworkCore and identity, its purpose is to be starting point to understand Oriented Object Programming paradigm usage on F#,
 andd then contains a lot of statements, instructions and declarations of objects interfaces abstractions etc..., and then from here we will migrate to a more functional way of developing web applications, such as the integration of Suave or Giraffe and others ....
-[introduction](https://fsharpdeveloper.github.com/introduction.md)
+[introduction](introduction.md)
 #### objects types definition:
      
 
