@@ -59,5 +59,5 @@ andd then contains a lot of statements, instructions and declarations of objects
      
 
 ### Material template
-[material]
+[material](material)
 
