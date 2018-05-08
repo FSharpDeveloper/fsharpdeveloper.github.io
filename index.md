@@ -6,9 +6,6 @@ just lets go for it;
 
 ### to FSharp or not To FSharp
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
 Discriminated Unions declaration:
     type StringOrInt = 
       | String of text:String
