@@ -8,12 +8,13 @@ just lets go for it;
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
 Discriminated Unions declaration:
+```fsharp
     type StringOrInt = 
       | String of text:String
       | Integer of count:Integer
-      
+```
+```fsharp
 The Option discriminated union case:
     type Option<'T> = 
       | Some of 'T
@@ -23,9 +24,9 @@ The Option discriminated union case:
           match value with 
           | Some t -> printfn "%o" t
           | None -> printfn "no data"
-
+```
 and here is a very ispiring example from msdn.microsoft.com
-
+```fsharp
     type Expression =
         | Number of int
         | Add of Expression * Expression
@@ -50,14 +51,10 @@ and here is a very ispiring example from msdn.microsoft.com
     // Evaluate the expression a + 2 * b, given the
     // table of values for the variables.
     let result = Evaluate environment expressionTree1
-
+```
 ### AspNetCore Mvc Application using F#.
 the repository FSharpWebApp-With-EfCore is an example of using FSharp in an AspNetcore web application, including the usage of EntityFrameworkCore and identity, its purpose is to be starting point to understand Oriented Object Programming paradigm usage on F#,
 andd then contains a lot of statements, instructions and declarations of objects interfaces abstractions etc..., and then from here we will migrate to a more functional way of developing web applications, such as the integration of Suave or Giraffe and others ....
 [introduction](introduction)
 #### objects types definition:
      
-
-### Material template
-[material](material)
-
