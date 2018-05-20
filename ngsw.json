@@ -1,0 +1,76 @@
+{
+  "configVersion": 1,
+  "index": "fsharpdeveloper.github.io/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "fsharpdeveloper.github.io/combined-sw.js",
+        "fsharpdeveloper.github.io/firebase-messaging-sw.js",
+        "fsharpdeveloper.github.io/index.html",
+        "fsharpdeveloper.github.io/main.15d6d1289845b921947e.js",
+        "fsharpdeveloper.github.io/main.4062182af2d79a21bd0c.js",
+        "fsharpdeveloper.github.io/main.5320c57084dae0cbf798.js",
+        "fsharpdeveloper.github.io/main.a40cf75314c0df844e9f.js",
+        "fsharpdeveloper.github.io/main.a92f42e8d7f048d60989.js",
+        "fsharpdeveloper.github.io/main.d56067f2777b29dfffa9.js",
+        "fsharpdeveloper.github.io/ngsw-worker.js",
+        "fsharpdeveloper.github.io/polyfills.34115f038a93d5ea956a.js",
+        "fsharpdeveloper.github.io/polyfills.d9a18817e6dc838c686c.js",
+        "fsharpdeveloper.github.io/runtime.a66f828dca56eeb90e02.js",
+        "fsharpdeveloper.github.io/safety-worker.js",
+        "fsharpdeveloper.github.io/styles.dc1418fd2ca1ad7a8e2f.css",
+        "fsharpdeveloper.github.io/styles.f92a2855eaacbe7cd4a5.css",
+        "fsharpdeveloper.github.io/worker-basic.min.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "fsharpdeveloper.github.io/combined-sw.js": "94ee71dff0bdb40066dfd2f27870a117b4cf6ef5",
+    "fsharpdeveloper.github.io/firebase-messaging-sw.js": "62da5712799c951100aacbd71af5d1cf26e73618",
+    "fsharpdeveloper.github.io/index.html": "46ac9fd2aba52b01ebfb94e142c49f8b1e1458b6",
+    "fsharpdeveloper.github.io/main.15d6d1289845b921947e.js": "8cb89f43f0b8d0e21c47a6a559e775c11ecd1183",
+    "fsharpdeveloper.github.io/main.4062182af2d79a21bd0c.js": "744e35f9756cf6915348fe9dbf377bbea5f7e435",
+    "fsharpdeveloper.github.io/main.5320c57084dae0cbf798.js": "167352e7fe0b42d4c7abfb64efafd835a60e7bb1",
+    "fsharpdeveloper.github.io/main.a40cf75314c0df844e9f.js": "e7bfcedb37a133753b05e7082287cab4c5f34dc2",
+    "fsharpdeveloper.github.io/main.a92f42e8d7f048d60989.js": "fa141c7ca4bd496d00ada03a09efe880b3102df8",
+    "fsharpdeveloper.github.io/main.d56067f2777b29dfffa9.js": "9b50d65b715dfa94a166197aa8aea3c78fb78670",
+    "fsharpdeveloper.github.io/ngsw-worker.js": "435d095ff4972221ef50fd600b38867e9447add4",
+    "fsharpdeveloper.github.io/polyfills.34115f038a93d5ea956a.js": "7049fd2878f394c42dcf816f42bee91056a2c065",
+    "fsharpdeveloper.github.io/polyfills.d9a18817e6dc838c686c.js": "24640db732b5e93e5cfa85e0ee2268f0e8dec947",
+    "fsharpdeveloper.github.io/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "fsharpdeveloper.github.io/safety-worker.js": "ae5c8be3955e38edeeec09ed94b63d1e57f003c9",
+    "fsharpdeveloper.github.io/styles.dc1418fd2ca1ad7a8e2f.css": "1229444e6477e35ddc2d6df78677d17e47751d6a",
+    "fsharpdeveloper.github.io/styles.f92a2855eaacbe7cd4a5.css": "93358d5124f153bb61ad6e1e8a8b34596acabcc8",
+    "fsharpdeveloper.github.io/worker-basic.min.js": "ae5c8be3955e38edeeec09ed94b63d1e57f003c9"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
