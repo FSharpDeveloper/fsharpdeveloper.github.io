@@ -10,13 +10,11 @@
         "/combined-sw.js",
         "/firebase-messaging-sw.js",
         "/index.html",
-        "/main.df80e24c633b1ee759f8.js",
+        "/main.c84d981632f155ee13f1.js",
         "/ngsw-worker.js",
         "/polyfills.34115f038a93d5ea956a.js",
         "/runtime.a66f828dca56eeb90e02.js",
-        "/safety-worker.js",
-        "/styles.f92a2855eaacbe7cd4a5.css",
-        "/worker-basic.min.js"
+        "/styles.f92a2855eaacbe7cd4a5.css"
       ],
       "patterns": []
     },
@@ -37,14 +35,12 @@
     "/assets/fsharp.svg": "87e6918139d455b9ca17c86762a636381cef0e9a",
     "/firebase-messaging-sw.js": "62da5712799c951100aacbd71af5d1cf26e73618",
     "/assets/fsharp_logo.svg": "7a956875ab2eed9f2e08d7ef766afadcab5c6b5a",
-    "/index.html": "df0a9d808bb510bcbe73910ebe2dc51583c78bec",
-    "/main.df80e24c633b1ee759f8.js": "fab3f3acf776d7a0d767aa368dca589db514f6e4",
+    "/index.html": "9c43e2f685d1f87093d28ac1c3e73944b337a113",
+    "/main.c84d981632f155ee13f1.js": "09db7301497c27de2639920d8c1814a7f2c0e0e1",
     "/ngsw-worker.js": "435d095ff4972221ef50fd600b38867e9447add4",
     "/polyfills.34115f038a93d5ea956a.js": "7049fd2878f394c42dcf816f42bee91056a2c065",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
-    "/safety-worker.js": "ae5c8be3955e38edeeec09ed94b63d1e57f003c9",
-    "/styles.f92a2855eaacbe7cd4a5.css": "93358d5124f153bb61ad6e1e8a8b34596acabcc8",
-    "/worker-basic.min.js": "ae5c8be3955e38edeeec09ed94b63d1e57f003c9"
+    "/styles.f92a2855eaacbe7cd4a5.css": "93358d5124f153bb61ad6e1e8a8b34596acabcc8"
   },
   "navigationUrls": [
     {
