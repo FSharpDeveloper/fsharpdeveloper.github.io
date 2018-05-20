@@ -4,7 +4,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <meta charset="utf-8">
-  <title>AngularTemplate</title>
+  <title>[#|>FsharpDev]</title>
   <base href="/">
   <!-- <script>
     (function() {
@@ -18,9 +18,70 @@
   <title>covalent-landing-page</title>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1976d2">
-<link rel="stylesheet" href="styles.f92a2855eaacbe7cd4a5.css"></head>
+  <style type="text/css">
+    body, html {
+      height: 100%;
+    }
+    .app-loading {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .app-loading .spinner {
+      height: 200px;
+      width: 200px;
+      animation: rotate 2s linear infinite;
+      transform-origin: center center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .app-loading .spinner .path {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite;
+      stroke-linecap: round;
+      stroke: #ddd;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+      }
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="styles.261a64bab6f396830204.css"></head>
 <body>
 <base href="/">
-<app-card-over>loading</app-card-over>
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.34115f038a93d5ea956a.js"></script><script type="text/javascript" src="main.c84d981632f155ee13f1.js"></script></body>
+<app-card-over>
+    <div class="logo"></div>
+    <svg class="spinner" viewBox="25 25 50 50">
+      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+    </svg>
+  </div>
+</app-card-over>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.34115f038a93d5ea956a.js"></script><script type="text/javascript" src="main.c7fbad1d802bb6869971.js"></script></body>
 </html>
