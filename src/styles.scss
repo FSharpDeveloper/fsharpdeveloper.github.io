@@ -1,0 +1,13 @@
+// Adjust your logo position
+.mat-icon {
+    &.mat-icon-logo {
+      position: relative;
+      top: -4px;
+    }
+}
+
+body { margin: 0; }
+
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/ngx-toastr/toastr-bs4-alert.scss";

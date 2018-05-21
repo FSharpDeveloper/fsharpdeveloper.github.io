@@ -1,0 +1,215 @@
+    <mat-toolbar class="pad-none">
+      <nav  mat-stretch-tabs mat-tab-nav-bar class="pull-bottom-xl pull-top-md text-upper" flex>
+        <mat-tab-group mat-stretch-tabs>
+          <mat-tab label="Home">
+            <span hide-xs>Home</span>
+            <span hide-gt-xs><mat-icon>home</mat-icon></span>
+          </mat-tab>
+          <mat-tab label="Technology">
+            <span hide-xs>Technology</span>
+            <span hide-gt-xs><mat-icon>laptop_mac</mat-icon></span>
+          </mat-tab>
+          <mat-tab label="Locations">
+            <span hide-xs>Locations</span>
+            <span hide-gt-xs><mat-icon>language</mat-icon></span>
+          </mat-tab>
+          <mat-tab label="Job Openings">
+            <span hide-xs>Job Openings</span>
+            <span hide-gt-xs><mat-icon>assignment</mat-icon></span>
+          </mat-tab>
+          <mat-tab label="">
+            <span hide-xs>Leadership</span>
+            <span hide-gt-xs><mat-icon>people</mat-icon></span>
+          </mat-tab>
+        </mat-tab-group>
+      </nav>
+    </mat-toolbar>
+    <!-- router outlet goes here -->
+    <section class="bgc-blue-grey-50">
+      <div layout-gt-xs="row">
+        <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xl']">
+          <div class="push-top-xl" hide-xs></div>
+          <div tdMediaToggle="gt-sm" [mediaClasses]="['push-lg']">
+            <h1 class="mat-display-1 tc-blue-A400 push-top-xs push-bottom-sm">Main Site Slogan</h1>
+            <h2 class="mat-headline tc-grey-800 push-top-xs push-bottom-sm">Supporting Secondary Text</h2>
+            <p class="mat-subhead tc-grey-600">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+            <button mat-raised-button color="accent" class="push-bottom text-upper">Call to Action</button>
+          </div>
+          <div class="push-bottom-xl" hide-xs></div>
+        </div>
+        <div flex="40" layout="row" layout-align="center center">
+          <mat-icon class="push" style="height:auto;width:auto;" svgIcon="assets:covalent-mark"></mat-icon>
+        </div>
+      </div>
+    </section>
+
+    <section class="bgc-blue-A700 tc-white"  tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-md', 'pad-bottom-xl']">
+      <h2 class="mat-display-1 text-upper text-center push-bottom">Work with bleeding edge technology</h2>
+      <div layout="row" layout-align-gt-xs="center center">
+        <div flex-gt-xs="80" layout="row" layout-wrap>
+          <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3]">
+            <div class="text-center" flex-xs="50" flex-gt-xs="25">
+              <mat-icon class="push" style="height:auto;width:auto;" svgIcon="assets:covalent-mark"></mat-icon>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+      <div class="text-center push-top">
+          <button mat-raised-button color="accent" class="mat-button-lg text-upper">View Technology</button>
+      </div>
+    </section>
+    <section class="bgc-blue-grey-100" tdMediaToggle="gt-xs" [mediaClasses]="['pad-top-xl', 'pad-bottom-xl']">
+      <h2 class="mat-display-1 text-upper text-center push-bottom">Current Team Openings</h2>
+      <div  layout-gt-xs="row" layout-align-gt-xs="center center">
+        <div layout-gt-xs="row" flex-gt-xs="90" layout-margin>
+          <div flex-gt-xs="25">
+            <mat-card>
+              <mat-toolbar color="accent" class="bgc-blue-A400 push-bottom">
+                <span class="text-upper">Frontend</span>
+              </mat-toolbar>
+              <mat-card-subtitle>Openings</mat-card-subtitle>
+              <mat-divider></mat-divider>
+              <mat-list>
+                <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
+                      <h4 matLine>Frontend Engineer</h4>
+                  </mat-list-item>
+                  <mat-divider mat-inset *ngIf="!last"></mat-divider>
+                </ng-template>
+              </mat-list>
+              <mat-divider></mat-divider>
+              <mat-card-actions>
+                <a mat-button color="accent" class="text-upper">View All</a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+
+          <div flex-gt-xs="25">
+            <mat-card>
+              <mat-toolbar color="accent" class="bgc-light-blue-A400 push-bottom">
+                <span class="text-upper">Backend</span>
+              </mat-toolbar>
+              <mat-card-subtitle>Openings</mat-card-subtitle>
+              <mat-divider></mat-divider>
+              <mat-list>
+                <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
+                      <h4 matLine>Backend Engineer</h4>
+                  </mat-list-item>
+                  <mat-divider mat-inset *ngIf="!last"></mat-divider>
+                </ng-template>
+              </mat-list>
+              <mat-divider></mat-divider>
+              <mat-card-actions>
+                <a mat-button color="accent" class="text-upper">View All</a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+
+          <div flex-gt-xs="25">
+            <mat-card>
+              <mat-toolbar color="accent" class="bgc-cyan-A700 push-bottom">
+                <span class="text-upper">DevOps</span>
+              </mat-toolbar>
+              <mat-card-subtitle>Openings</mat-card-subtitle>
+              <mat-divider></mat-divider>
+              <mat-list>
+                <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
+                      <h4 matLine>DevOps Engineer</h4>
+                  </mat-list-item>
+                  <mat-divider mat-inset *ngIf="!last"></mat-divider>
+                </ng-template>
+              </mat-list>
+              <mat-divider></mat-divider>
+              <mat-card-actions>
+                <a mat-button color="accent" class="text-upper">View All</a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div flex-gt-xs="25">
+            <mat-card>
+              <mat-toolbar color="accent" class="bgc-teal-A700 push-bottom">
+                <span class="text-upper">Quality</span>
+              </mat-toolbar>
+              <mat-card-subtitle>Openings</mat-card-subtitle>
+              <mat-divider></mat-divider>
+              <mat-list>
+                <ng-template let-item let-last="last" ngFor [ngForOf]="[0,1,2,3,4]">
+                  <mat-list-item>
+                      <mat-icon mat-list-icon class="fill-grey-700">description</mat-icon>
+                      <h4 matLine>Quality Engineer</h4>
+                  </mat-list-item>
+                  <mat-divider mat-inset *ngIf="!last"></mat-divider>
+                </ng-template>
+              </mat-list>
+              <mat-divider></mat-divider>
+              <mat-card-actions>
+                <a mat-button color="accent" class="text-upper">View All</a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+      <div class="text-center push-top">
+          <button mat-raised-button color="accent" class="mat-button-lg text-upper">View All Openings</button>
+      </div>
+    </section>
+    <section class="bgc-green-A700">
+      <div layout-gt-xs="row">
+        <div flex="40" layout="row" layout-align="center center">
+          <mat-icon class="push" style="height:auto;width:auto;" svgIcon="assets:covalent-mark"></mat-icon>
+        </div>
+        <div flex class="pad" tdMediaToggle="gt-xs" [mediaClasses]="['pad-xxl']">
+          <div class="push-top-xxl" hide-xs></div>
+          <h3 class="mat-display-1 tc-white push-top-xs push-bottom-sm">The most desirable locations</h3>
+          <p class="mat-title tc-blue-50">Austin, Boston, San Diego and The Bay Area!</p>
+          <button color="accent" mat-raised-button class="push-bottom-md text-upper">View More</button>
+          <div class="push-top-xxl" hide-xs></div>
+        </div>
+      </div>
+    </section>
+    <!-- end content -->
+    <section class="bgc-blue-grey-800 tc-blue-grey-100">
+      <div layout-gt-xs="row" layout-align-gt-xs="center center">
+        <div layout-gt-xs="row" flex-gt-xs="80" layout-margin layout-padding>
+          <div flex-gt-xs>
+            <mat-nav-list>
+              <h3 mat-subheader class="text-upper tc-blue-grey-100">About Teradata</h3>
+              <mat-list-item>
+                <p matLine class="tc-blue-grey-300">Company Info</p>
+              </mat-list-item>
+              <mat-list-item>
+                <p matLine class="tc-blue-grey-300">Our Customers</p>
+              </mat-list-item>
+              <mat-list-item>
+                <p matLine class="tc-blue-grey-300">Press</p>
+              </mat-list-item>
+            </mat-nav-list>
+          </div>
+          <div flex-gt-xs>
+            <mat-nav-list>
+              <h3 mat-subheader class="text-upper tc-blue-grey-100">Career Info</h3>
+              <mat-list-item>
+                <p matLine class="tc-blue-grey-300">Benefits</p>
+              </mat-list-item>
+              <mat-list-item>
+                <p matLine class="tc-blue-grey-300">Locations</p>
+              </mat-list-item>
+              <mat-list-item>
+                <p matLine class="tc-blue-grey-300">List item</p>
+              </mat-list-item>
+            </mat-nav-list>
+          </div>
+          <div flex-gt-xs="10">
+          </div>
+          <div flex layout="column" flex-gt-xs="30">
+            <mat-icon class="push-top-md" svgIcon="assets:covalent" style="height:auto;width:auto;"></mat-icon>
+            <p class="mat-body-1">&copy; Copyright 2017 Teradata, Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>

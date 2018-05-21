@@ -1,0 +1,296 @@
+<td-layout>
+    <td-navigation-drawer flex sidenavTitle="{{siteName}}" logo="assets:fsharp_logo" name="Firstname Lastname" email="{{email}}">
+      <mat-nav-list>
+        <a *ngFor="let item of routes" mat-list-item><mat-icon>{{item.icon}}</mat-icon>{{item.title}}</a>
+      </mat-nav-list>
+      <div td-navigation-drawer-menu>
+        <mat-nav-list *ngIf="isAuthenticated">
+          <a *ngFor="let item of usermenu" mat-list-item><mat-icon>{{item.icon}}</mat-icon>{{item.title}}</a>
+        </mat-nav-list>
+      </div>
+    </td-navigation-drawer>
+    <td-layout-nav color="accent">
+      <div td-toolbar-content layout="row" layout-align="start center" flex>
+        <button mat-icon-button td-menu-button tdLayoutToggle>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-icon [routerLink]="['/']" class="mat-icon-logo cursor-pointer" svgIcon="assets:fsharp"></mat-icon>
+        <span [routerLink]="['/']" class="cursor-pointer">{{siteName}}</span>
+        <span flex></span>
+        <a mat-icon-button matTooltip="Docs" href="https://fhsarpdeveloper.github.io/documents/" target="_blank"><mat-icon>chrome_reader_mode</mat-icon></a>
+        <a mat-icon-button matTooltip="Github" href="https://github.com/fhsarpdeveloper" target="_blank"><mat-icon svgIcon="assets:github"></mat-icon></a>
+      </div>
+        <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+          <div fxFlex="25%">
+              <div _ngcontent-c55="" class="demo-sidenav">
+                  <mat-list _ngcontent-c55="" class="mat-list">
+                    <h3 _ngcontent-c55="" class="mat-subheader" matsubheader="">Sidenav Demo</h3>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 1</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 2</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 3</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 4</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 5</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 6</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 7</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 8</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 9</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 10</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 11</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 12</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 13</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 14</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 15</span>
+                      </div>
+                    </mat-list-item>
+                    <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                    <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                      <div class="mat-list-item-content">
+                        <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                        <div class="mat-list-text"></div>
+                        <span _ngcontent-c55="">Sidenav Item 16</span>
+                      </div>
+                    </mat-list-item>
+                  </mat-list>
+                </div>          <div _ngcontent-c55="" class="demo-sidenav">
+                    <mat-list _ngcontent-c55="" class="mat-list">
+                      <h3 _ngcontent-c55="" class="mat-subheader" matsubheader="">Sidenav Demo</h3>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 1</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 2</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 3</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 4</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 5</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 6</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 7</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 8</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 9</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 10</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 11</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 12</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 13</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 14</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 15</span>
+                        </div>
+                      </mat-list-item>
+                      <mat-divider _ngcontent-c55="" class="mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+                      <mat-list-item _ngcontent-c55="" class="mat-list-item">
+                        <div class="mat-list-item-content">
+                          <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                          <div class="mat-list-text"></div>
+                          <span _ngcontent-c55="">Sidenav Item 16</span>
+                        </div>
+                      </mat-list-item>
+                    </mat-list>
+                  </div>
+          </div>
+          <div fxFlex="75%">
+            <td-layout-card-over color="accent" cardWidth="75">
+              <router-outlet></router-outlet>
+            </td-layout-card-over>
+          </div>
+        </div>
+    </td-layout-nav>
+  </td-layout>
